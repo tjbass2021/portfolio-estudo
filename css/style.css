@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    z-index: 1;
+}
+
+.botao {
+    width: 45px;
+    filter: invert(100%);
+    
+
+}
+
+.btn{
+    display: none !important;
+    background-color: #11121a;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    border: 0;
+    
+}
+
+
+.font-w-normal {
+    font-weight: normal;
+}
+
+.cabecalho h1 {
+    font-weight: normal;
+    
+
+}
+
+.divisao {
+    width: 50%;
+    height: 5px;
+    background-color: #f6f7f9;
+    margin-bottom: 25px;
+    position: relative;
+    left: 30%;
+    right: 20%;
+    
+}
+
+.mb-25px{
+    margin-top: 25px;
+}
+
+.apresentacao{
+    position: relative;
+    background-color: #555b84;
+    /* background-image: url(../assets/images/2software-developer-g0da093a20_1920.jpg); */
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    z-index: -2;
+}
+
+.bola1 {
+    background-color: #3c425f;
+    position: absolute;
+    top: -100px;
+    left: -600px;
+    height: 800px;
+    width: 100%;
+    clip-path: circle();
+    z-index: -1;
+}
+.bola2 {
+    background-color: #3c425f;
+    position: absolute;
+    bottom: -200px;
+    right: 0px;
+    height: 100%;
+    width: 500px;
+    clip-path: circle();
+    z-index: -3;
+}
+
+.titulo-subtitulo{
+    background-color: rgba(17, 18, 26, 0.8);
+}
+
+
+.apresentacao h1 {
+    position: relative;
+    font-size: 60px;
+    /* background-color: rgba(17, 18, 26, 0.8); */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-left: 10px solid #f6f7f9;
+    z-index: 2;
+    
+}
+
+.apresentacao h3 {
+    font-size: 30px;
+    /* background-color: rgba(17, 18, 26, 0.8); */
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-left: 10px solid #f6f7f9;
+    position: relative;
+    z-index: 2;
+}
+
+
+.apresentacao img {
+    width: 200px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.sobre {
+    background-color: #11121a;
+    width: 100%;
+    height: 90vh;
+    padding: 50px;
+
+}
+
+.eu2 {
+    width: 574px;
+    margin-right: 5px;
+    border-radius:0 1% 1% 0;
+    border-left: 10px solid #f6f7f9;
+}
+
+.texto-sobre{
+    /* border: 2px solid white; */
+    height: 375px;
+    width: 500px;
+    padding: 20px;
+    
+
+
+}
+
+.texto-sobre h3 {
+    margin-bottom: 15px;
+}
+
+.titulo-sobre{
+    margin-bottom: 30px;
+    
+}
+
+.titulo-sobre span{
+    border-bottom: 5px solid #f6f7f9;
+    padding-bottom: 10px;
+}
+
+
+.bg-brow-grey {
+    background-color: #11121a;
+}
+.d-flex{
+    display: flex;
+    flex-direction: column;
+}
+.d-none {
+    display: none;
+}
+.flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-spacearound-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-row-wrap{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row-wrap-space-between {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho {
+    padding: 15px 30px;
+}
+
+.logo {
+    width: 45px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+
+}
+
+nav a:hover{
+    opacity: 50%;
+}
+
+
+/*MEDIA QUERIES*/
+
+
+@media (max-width: 783px){
+    .btn {
+        display: flex !important;
+    }
+    .menu1 {
+        display: none;
+    }
+
+    .menu2{
+
+        position: fixed;
+        bottom: 80px;
+        right: 10px;
+        background-color: #11121a;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #555b84;
+    }
+    .menu2 a {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 584px){
+    .eu2 {
+        width: 400px;
+    }
+    .texto-sobre {
+        width: 400px;
+
+        
+    }
+}
+
+@media (max-width: 513px){
+    .apresentacao h1 {
+        font-size: 30px;
+    }
+
+    .apresentacao h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 398px){
+    .eu2 {
+        width: 350px;
+    }
+
+    .texto-sobre {
+        width: 350px;
+    }
+}
+
+@media (max-width: 349px){
+    .eu2 {
+        width: 280px;
+    }
+    .texto-sobre{
+        width: 280px;
+    }
+}
