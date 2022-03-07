@@ -12,6 +12,22 @@ body {
     z-index: 1;
 }
 
+.logotipo h1{
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 30px;
+}
+
 .cabecalho, .logotipo img, .logotipo h1{
     transition: 0.7s;
 }
@@ -161,20 +177,26 @@ body {
 
 .texto-sobre{
     /* border: 2px solid white; */
-    height: 375px;
-    width: 500px;
+    height: auto;
+    width: 50%;
     padding: 20px;
     
 
 
 }
 
+.texto-sobre p{
+    font-size: 20px;
+}
+
 .texto-sobre h3 {
     margin-bottom: 15px;
+    font-size: 30px;
 }
 
 .titulo-sobre{
     margin-bottom: 30px;
+    font-size: 40px;
     
 }
 
@@ -217,6 +239,7 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    
 }
 
 .flex-row-wrap-space-between {
@@ -245,12 +268,19 @@ nav a {
 
 nav a:hover{
     opacity: 50%;
+    transition: .4s;
 }
 
 
 
 
 /*MEDIA QUERIES*/
+
+@media (max-width: 1366px){
+    .foto{
+        width: 300px !important;
+    }
+}
 
 
 @media (max-width: 900px){
@@ -259,6 +289,7 @@ nav a:hover{
     }
     .menu1 {
         opacity: 0;
+        display: none;
     }
 
     .menu2{
@@ -277,12 +308,14 @@ nav a:hover{
     }
     .menu2 a {
         margin-bottom: 10px;
-        font-size: 100%;
+        font-size: 20px;
     }
 
-    .foto{
-        width: 300px !important;
+    .texto-sobre{
+        width: 100%;
     }
+
+
 }
 
 
@@ -294,10 +327,10 @@ nav a:hover{
 
 @media (max-width: 584px){
     .eu2 {
-        width: 400px;
+        width: 100%;
     }
     .texto-sobre {
-        width: 400px;
+        width: 100%;
 
         
     }
